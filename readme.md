@@ -19,9 +19,9 @@ cd jumping_minds_assignment
 
 It's recommended to use a virtual environment to isolate project dependencies. If you don't have `virtualenv` installed, you can install it using:
 
-```bash
+
 pip install virtualenv
-```
+
 
 Now, create a virtual environment:
 
