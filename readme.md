@@ -140,3 +140,34 @@ Description: Fetches the next destination floor for a given elevator based on it
     "detail": "Next destination floor for elevator 7f22f275-778b-45ea-9d85-98911d31be3c is 2"
 }
 ```
+4. Fetch if the elevator is moving up or down currently.
+
+Endpoint: GET /direction/<uuid:elevator_id>
+
+Description: Fetches the current direction (up or down) in which the elevator is moving.
+
+### Response Body:
+```bash
+{
+    "detail": "Direction of  elevator 7f22f275-778b-45ea-9d85-98911d31be3c is down"
+}
+```
+5. Save user request to the list of requests for an elevator.
+
+Endpoint: POST /elevator_request
+
+Description: Saves a user request for a specific elevator.
+
+### Request Body
+```bash
+{
+    "name":"Elevator_fe54ba34-7e3d-4672-a743-4205fada6e6f",
+    "floor":3
+}
+```
+### Response Body
+```bash
+{
+    "detail": "Elevator request has been saved successfully"
+}
+```
