@@ -97,4 +97,35 @@ Description: Initializes the elevator system with 'n' elevators.
     "detail": "2 elevators created successfully in the system"
 }
 ```
-Remember to replace the example commands and project URL with the appropriate ones specific to your project. If there are any additional steps required for your project's setup, make sure to add them in the corresponding sections above.
+
+2. Fetch all requests for a given elevator.
+
+Endpoint: GET /elevator_requests/<uuid:elevator_id>
+
+Description: Fetches all the user requests assigned to a given elevator.
+
+### Response Body:
+```bash
+[
+    {
+        "id": "d10ec545-4225-4650-9f23-8c1458348f17",
+        "floor": 2,
+        "requested_direction": "up",
+        "created_on": "2023-07-26T06:38:29.444082Z",
+        "modified_on": "2023-07-26T06:38:29.444082Z",
+        "created_by": null,
+        "modified_by": null,
+        "elevator": "7f22f275-778b-45ea-9d85-98911d31be3c"
+    },
+    {
+        "id": "d5a4058a-dbd9-425f-931b-35bdbe1858b2",
+        "floor": 3,
+        "requested_direction": "up",
+        "created_on": "2023-07-26T06:38:09.602895Z",
+        "modified_on": "2023-07-26T06:38:09.602895Z",
+        "created_by": null,
+        "modified_by": null,
+        "elevator": "7f22f275-778b-45ea-9d85-98911d31be3c"
+    }
+]
+```
