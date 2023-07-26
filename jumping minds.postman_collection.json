@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "3873dc71-7d5d-43d0-b1db-a73ff9d43495",
+		"name": "jumping minds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Initialize elevator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num_elevators\":3,\r\n    \"total_floor\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/elevator/initialize",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"elevator",
+						"initialize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch all requests for a given elevator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/elevator/elevator_requests/7f22f275-778b-45ea-9d85-98911d31be3c",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"elevator",
+						"elevator_requests",
+						"7f22f275-778b-45ea-9d85-98911d31be3c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch the next destination floor for a given elevator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/elevator/elevator_next_destination/7f22f275-778b-45ea-9d85-98911d31be3c",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"elevator",
+						"elevator_next_destination",
+						"7f22f275-778b-45ea-9d85-98911d31be3c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Saves user request to the list of requests for a elevator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Elevator_fe54ba34-7e3d-4672-a743-4205fada6e6f\",\r\n    \"floor\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/elevator/elevator_request",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"elevator",
+						"elevator_request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch if the elevator is moving up or down currently",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/elevator/direction/7f22f275-778b-45ea-9d85-98911d31be3c",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"elevator",
+						"direction",
+						"7f22f275-778b-45ea-9d85-98911d31be3c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mark a elevator as not working or in maintenance",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\":\"working\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/elevator/maintenance/7f22f275-778b-45ea-9d85-98911d31be3c",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"elevator",
+						"maintenance",
+						"7f22f275-778b-45ea-9d85-98911d31be3c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Door opening and closing",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"door_open\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/elevator/door/e3a889ce-0ca3-413b-84aa-b3e72d2ae7e1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"elevator",
+						"door",
+						"e3a889ce-0ca3-413b-84aa-b3e72d2ae7e1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
