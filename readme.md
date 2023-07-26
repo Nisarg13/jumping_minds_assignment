@@ -84,13 +84,13 @@ Endpoint: POST /initialize
 
 Description: Initializes the elevator system with 'n' elevators.
 
-###Request Body:
+### Request Body:
 {
     "num_elevators":2,
     "total_floor":4
 }
 
-###Response Body:
+### Response Body:
 {
     "detail": "2 elevators created successfully in the system"
 }
