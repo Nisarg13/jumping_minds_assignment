@@ -10,7 +10,6 @@ Follow these steps to set up the project and its dependencies.
 
 ```bash
 git clone https://github.com/Nisarg13/jumping_minds_assignment.git
-cd jumping_minds_assignment
 ```
 
 ### Step 2: Create and Activate a Virtual Environment
@@ -128,4 +127,16 @@ Description: Fetches all the user requests assigned to a given elevator.
         "elevator": "7f22f275-778b-45ea-9d85-98911d31be3c"
     }
 ]
+```
+3. Fetch the next destination floor for a given elevator.
+
+Endpoint: GET /elevator_next_destination/<uuid:elevator_id>
+
+Description: Fetches the next destination floor for a given elevator based on its current state and user requests.
+
+### Response Body:
+```bash
+{
+    "detail": "Next destination floor for elevator 7f22f275-778b-45ea-9d85-98911d31be3c is 2"
+}
 ```
