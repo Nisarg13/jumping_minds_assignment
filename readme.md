@@ -1,9 +1,6 @@
-Sure! Here's the updated README.md file with proper styling:
-
-```markdown
 # Jumping Minds Assignment
 
-This repository contains the code for the Jumping Minds Assignment. 
+This repository contains the code for the Jumping Minds Assignment.
 
 ## Installation
 
@@ -11,17 +8,18 @@ Follow these steps to set up the project and its dependencies.
 
 ### Step 1: Clone the Repository
 
+```bash
 git clone https://github.com/Nisarg13/jumping_minds_assignment.git
 cd jumping_minds_assignment
-
+```
 
 ### Step 2: Create and Activate a Virtual Environment
 
 It's recommended to use a virtual environment to isolate project dependencies. If you don't have `virtualenv` installed, you can install it using:
 
-
+```bash
 pip install virtualenv
-
+```
 
 Now, create a virtual environment:
 
@@ -62,6 +60,7 @@ pip install -r requirements.txt
 Start the project using the appropriate command:
 
 Example:
+
 ```bash
 python manage.py runserver
 ```
@@ -73,3 +72,5 @@ To deactivate the virtual environment, run:
 ```bash
 deactivate
 ```
+
+Remember to replace the example commands and project URL with the appropriate ones specific to your project. If there are any additional steps required for your project's setup, make sure to add them in the corresponding sections above.
