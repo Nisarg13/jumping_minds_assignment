@@ -85,14 +85,16 @@ Endpoint: POST /initialize
 Description: Initializes the elevator system with 'n' elevators.
 
 ### Request Body:
+```bash
 {
     "num_elevators":2,
     "total_floor":4
 }
-
+```
 ### Response Body:
+```bash
 {
     "detail": "2 elevators created successfully in the system"
 }
-
+```
 Remember to replace the example commands and project URL with the appropriate ones specific to your project. If there are any additional steps required for your project's setup, make sure to add them in the corresponding sections above.
