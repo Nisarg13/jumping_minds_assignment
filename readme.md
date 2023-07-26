@@ -171,3 +171,39 @@ Description: Saves a user request for a specific elevator.
     "detail": "Elevator request has been saved successfully"
 }
 ```
+6. Mark an elevator as not working or in maintenance.
+
+Endpoint: PATCH /maintenance/<uuid:elevator_id>
+
+Description: Marks an elevator as not working or under maintenance.
+
+### Request Body
+```bash
+{
+    "status":"working"
+}
+```
+### Response Body
+```bash
+{
+    "detail": "Elevator 7f22f275-778b-45ea-9d85-98911d31be3c has been marked as working"
+}
+```
+7. Open/Close the door.
+
+Endpoint: PATCH /door/<uuid:elevator_id>
+
+Description: Opens or closes the door of a specific elevator.
+
+### Request Body
+```bash
+{
+    "door_open":false
+}
+```
+### Response Body
+```bash
+{
+    "detail": "Elevator e3a889ce-0ca3-413b-84aa-b3e72d2ae7e1 door is closing"
+}
+```
