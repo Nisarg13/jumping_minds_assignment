@@ -2,6 +2,10 @@
 
 This repository contains the code for the Jumping Minds Assignment.
 
+# Note
+
+## Postman collection is also shared you can used that also.
+
 ## Installation
 
 Follow these steps to set up the project and its dependencies.
