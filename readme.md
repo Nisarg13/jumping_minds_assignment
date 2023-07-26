@@ -73,4 +73,26 @@ To deactivate the virtual environment, run:
 deactivate
 ```
 
+## API'S:
+
+Sure! Here are the APIs mentioned in the above README.md file:
+
+
+1. Initialize the elevator system to create ‘n’ elevators in the system.
+
+Endpoint: POST /initialize
+
+Description: Initializes the elevator system with 'n' elevators.
+
+###Request Body:
+{
+    "num_elevators":2,
+    "total_floor":4
+}
+
+###Response Body:
+{
+    "detail": "2 elevators created successfully in the system"
+}
+
 Remember to replace the example commands and project URL with the appropriate ones specific to your project. If there are any additional steps required for your project's setup, make sure to add them in the corresponding sections above.
