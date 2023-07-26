@@ -75,6 +75,20 @@ To deactivate the virtual environment, run:
 ```bash
 deactivate
 ```
+## Database:
+Please Create a database in postgres and give the database name elevator_system and put your database password in settings file.
+```bash
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'elevator_system',
+        'USER': 'postgres',
+        'PASSWORD': '<Your Password>',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
+}
+```
 
 ## API'S:
 
