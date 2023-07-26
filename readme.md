@@ -3,7 +3,7 @@ Sure! Here's the updated README.md file with proper styling:
 ```markdown
 # Jumping Minds Assignment
 
-This repository contains the code for the Jumping Minds Assignment. (Replace this with a brief description of your project.)
+This repository contains the code for the Jumping Minds Assignment. 
 
 ## Installation
 
@@ -11,10 +11,9 @@ Follow these steps to set up the project and its dependencies.
 
 ### Step 1: Clone the Repository
 
-```bash
 git clone https://github.com/Nisarg13/jumping_minds_assignment.git
 cd jumping_minds_assignment
-```
+
 
 ### Step 2: Create and Activate a Virtual Environment
 
@@ -74,18 +73,3 @@ To deactivate the virtual environment, run:
 ```bash
 deactivate
 ```
-
-## Contributing
-
-If you would like to contribute to the project, please follow the guidelines in CONTRIBUTING.md.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-For questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
-```
-
-Please copy and paste the updated content into a new file named `README.md` in the root directory of your project. Make sure to replace the description and contact email with appropriate information for your project. Once you have made the changes, commit the file to your local repository and then push it to your GitHub repository.
