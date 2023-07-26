@@ -77,7 +77,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'elevator_system',
         'USER': 'postgres',
-        'PASSWORD': 'nickganatra2000',
+        'PASSWORD': '<Your Password>',
         'HOST': 'localhost',
         'PORT': '5432'
     }
